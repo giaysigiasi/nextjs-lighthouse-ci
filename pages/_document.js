@@ -7,6 +7,7 @@ export default class MyDocument extends Document {
     const sheet = new ServerStyleSheet()
     const originalRenderPage = ctx.renderPage
     try {
+      console.log("initial test");
       ctx.renderPage = () =>
         originalRenderPage({
           // eslint-disable-next-line react/jsx-props-no-spreading
